@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		
+		<link rel="stylesheet" type="text/css" href="themes/default/easyui.css"/>
+		<link rel="stylesheet" type="text/css" href="themes/icon.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.easyui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/easyui-lang-zh_CN.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			form table td{
+				padding: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<form action="#" method="post" >
+			
+			<table border="0" width="80%" align="center">
+				<tr>
+					<td align="center">
+						<img src="img/gp.png" style="width: 100px;" class="img-thumbnail"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="input-group">
+						  <span class="input-group-addon" > 姓名 </span>
+						  <input type="text" name="name" class="form-control" placeholder="请输入姓名" >
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="input-group">
+						  <span class="input-group-addon" > 用户名 </span>
+						  <input type="text" name="userName" class="form-control" placeholder="请输入账号" >
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="input-group">
+						  <span class="input-group-addon" > 密码 </span>
+						  <input type="text" class="form-control" name="password" placeholder="请输入密码" >
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="input-group">
+						  <span class="input-group-addon" > 性别 </span>
+						 	&nbsp;&nbsp;<input type="radio" name="gender" id="m" value="男" checked/><label for="m">男</label>
+						 	&nbsp;&nbsp;<input type="radio" name="gender" id="w" value="女"/><label for="w">女</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="input-group">
+						  <span class="input-group-addon" > 地址 </span>
+						  <select class="form-control">
+							<option>--请选择省--</option>						  	
+						  </select>
+						  <select class="form-control">
+							<option>--请选择市--</option>						  	
+						  </select>
+						  <select class="form-control">
+							<option>--请选择区/县--</option>						  	
+						  </select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="input-group">
+						  <span class="input-group-addon" > 生日 </span>
+						  <input type="text" name="birthday" class="form-control" placeholder="Username" >
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="input-group">
+						  <span class="input-group-addon" > 头像</span>
+						  <input type="file" name="icon" />
+						</div>
+					</td>
+				</tr>
+			</table>
+			
+		</form>
+		
+	</body>
+</html>
