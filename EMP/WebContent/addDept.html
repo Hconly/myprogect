@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+<style type="text/css">
+.my{
+	width: 1000px;
+	margin: 30px auto;
+}
+.inp{
+	position:relative;
+	width: 500px;
+	margin-left: -250px;
+	left: 50%;
+}
+.mysub{
+	width: 150px;
+	position: absolute;
+	margin-left: -75px;
+	left: 50%;
+}
+</style>
+</head>
+<body>
+	<div class="my">
+		<form action="DeptServlet?method=add" method="post">
+			<input type="text" name="dname" placeholder="请输入部门名称" required class="form-control inp"><br>
+			<input type="text" name="loc" placeholder="请输入地址" required class="form-control inp"><br>
+			<div class="mydiv">
+				<input type="submit" value="添加部门" class="btn btn-success mysub">
+			</div>
+		</form>
+	</div>
+</body>
+</html>

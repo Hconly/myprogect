@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="bookstore">
+  <database-model serializer="dbm" rdbms="ORACLE" format-version="4.9">
+    <root id="1">
+      <ServerVersion>11.2.0.1</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="BOOKSTORE">
+      <ObjectId>92</ObjectId>
+      <IntrospectionTimestamp>2018-11-20.07:51:14</IntrospectionTimestamp>
+      <CreatedTimestamp>2018-11-20.03:48:00</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-20.04:57:51</ModifiedTimestamp>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="PUBLIC">
+      <ObjectId>1</ObjectId>
+    </schema>
+    <schema id="4" parent="1" name="SYS">
+      <ObjectId>0</ObjectId>
+    </schema>
+    <schema id="5" parent="1" name="SYSTEM">
+      <ObjectId>5</ObjectId>
+    </schema>
+    <schema id="6" parent="1" name="OUTLN">
+      <ObjectId>9</ObjectId>
+    </schema>
+    <schema id="7" parent="1" name="DIP">
+      <ObjectId>14</ObjectId>
+    </schema>
+    <schema id="8" parent="1" name="ORACLE_OCM">
+      <ObjectId>21</ObjectId>
+    </schema>
+    <schema id="9" parent="1" name="DBSNMP">
+      <ObjectId>30</ObjectId>
+    </schema>
+    <schema id="10" parent="1" name="APPQOSSYS">
+      <ObjectId>31</ObjectId>
+    </schema>
+    <schema id="11" parent="1" name="WMSYS">
+      <ObjectId>32</ObjectId>
+    </schema>
+    <schema id="12" parent="1" name="EXFSYS">
+      <ObjectId>42</ObjectId>
+    </schema>
+    <schema id="13" parent="1" name="CTXSYS">
+      <ObjectId>43</ObjectId>
+    </schema>
+    <schema id="14" parent="1" name="XDB">
+      <ObjectId>45</ObjectId>
+    </schema>
+    <schema id="15" parent="1" name="ANONYMOUS">
+      <ObjectId>46</ObjectId>
+    </schema>
+    <schema id="16" parent="1" name="ORDSYS">
+      <ObjectId>53</ObjectId>
+    </schema>
+    <schema id="17" parent="1" name="ORDDATA">
+      <ObjectId>54</ObjectId>
+    </schema>
+    <schema id="18" parent="1" name="ORDPLUGINS">
+      <ObjectId>55</ObjectId>
+    </schema>
+    <schema id="19" parent="1" name="SI_INFORMTN_SCHEMA">
+      <ObjectId>56</ObjectId>
+    </schema>
+    <schema id="20" parent="1" name="MDSYS">
+      <ObjectId>57</ObjectId>
+    </schema>
+    <schema id="21" parent="1" name="OLAPSYS">
+      <ObjectId>61</ObjectId>
+    </schema>
+    <schema id="22" parent="1" name="MDDATA">
+      <ObjectId>65</ObjectId>
+    </schema>
+    <schema id="23" parent="1" name="SPATIAL_WFS_ADMIN_USR">
+      <ObjectId>67</ObjectId>
+    </schema>
+    <schema id="24" parent="1" name="SPATIAL_CSW_ADMIN_USR">
+      <ObjectId>70</ObjectId>
+    </schema>
+    <schema id="25" parent="1" name="SYSMAN">
+      <ObjectId>72</ObjectId>
+    </schema>
+    <schema id="26" parent="1" name="MGMT_VIEW">
+      <ObjectId>74</ObjectId>
+    </schema>
+    <schema id="27" parent="1" name="FLOWS_FILES">
+      <ObjectId>75</ObjectId>
+    </schema>
+    <schema id="28" parent="1" name="APEX_PUBLIC_USER">
+      <ObjectId>76</ObjectId>
+    </schema>
+    <schema id="29" parent="1" name="APEX_030200">
+      <ObjectId>78</ObjectId>
+    </schema>
+    <schema id="30" parent="1" name="OWBSYS">
+      <ObjectId>79</ObjectId>
+    </schema>
+    <schema id="31" parent="1" name="OWBSYS_AUDIT">
+      <ObjectId>83</ObjectId>
+    </schema>
+    <schema id="32" parent="1" name="SCOTT">
+      <ObjectId>84</ObjectId>
+    </schema>
+    <schema id="33" parent="1" name="HR">
+      <ObjectId>85</ObjectId>
+    </schema>
+    <schema id="34" parent="1" name="OE">
+      <ObjectId>86</ObjectId>
+    </schema>
+    <schema id="35" parent="1" name="IX">
+      <ObjectId>87</ObjectId>
+    </schema>
+    <schema id="36" parent="1" name="SH">
+      <ObjectId>88</ObjectId>
+    </schema>
+    <schema id="37" parent="1" name="PM">
+      <ObjectId>89</ObjectId>
+    </schema>
+    <schema id="38" parent="1" name="BI">
+      <ObjectId>90</ObjectId>
+    </schema>
+    <schema id="39" parent="1" name="OLTS">
+      <ObjectId>91</ObjectId>
+    </schema>
+    <schema id="40" parent="1" name="XS$NULL">
+      <ObjectId>2147483638</ObjectId>
+    </schema>
+    <sequence id="41" parent="2" name="ORDER_SEQ">
+      <ObjectId>76769</ObjectId>
+      <CreatedTimestamp>2018-11-20.04:57:51</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-20.04:57:51</ModifiedTimestamp>
+      <SequenceIdentity>1..1000</SequenceIdentity>
+      <Cycled>1</Cycled>
+      <CacheSize>10</CacheSize>
+    </sequence>
+    <table id="42" parent="2" name="ANTHORTY_INFO">
+      <ObjectId>76755</ObjectId>
+      <CreatedTimestamp>2018-11-20.03:48:06</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-20.03:48:06</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="43" parent="2" name="BOOK">
+      <ObjectId>76762</ObjectId>
+      <CreatedTimestamp>2018-11-20.03:48:24</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-20.03:48:24</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="44" parent="2" name="BOOKTYPE">
+      <ObjectId>76760</ObjectId>
+      <CreatedTimestamp>2018-11-20.03:48:18</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-20.03:48:18</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="45" parent="2" name="EXPRESS">
+      <ObjectId>76767</ObjectId>
+      <CreatedTimestamp>2018-11-20.03:48:43</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-20.03:48:43</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="46" parent="2" name="ORDERITEM">
+      <ObjectId>76766</ObjectId>
+      <CreatedTimestamp>2018-11-20.03:48:37</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-20.03:48:37</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="47" parent="2" name="ORDERS">
+      <ObjectId>76764</ObjectId>
+      <CreatedTimestamp>2018-11-20.03:48:33</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-20.03:48:33</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="48" parent="2" name="ROLE_ANTHORITY_INFO">
+      <ObjectId>76759</ObjectId>
+      <CreatedTimestamp>2018-11-20.03:48:14</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-20.03:48:14</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="49" parent="2" name="ROLE_INFO">
+      <ObjectId>76757</ObjectId>
+      <CreatedTimestamp>2018-11-20.03:48:10</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-20.03:48:10</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="50" parent="2" name="STOCK">
+      <ObjectId>76768</ObjectId>
+      <CreatedTimestamp>2018-11-20.03:48:47</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-20.03:48:47</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="51" parent="2" name="USERS">
+      <ObjectId>76752</ObjectId>
+      <CreatedTimestamp>2018-11-20.03:48:00</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-20.03:48:00</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <column id="52" parent="42" name="ANTHORTY_ID">
+      <Position>1</Position>
+      <DataType>NUMBER(11 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="53" parent="42" name="ANTHORTY_PID">
+      <Position>2</Position>
+      <DataType>NUMBER(11 digit)|0s</DataType>
+    </column>
+    <column id="54" parent="42" name="ANTHORTY_NAME">
+      <Position>3</Position>
+      <DataType>VARCHAR2(100 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="55" parent="42" name="ANTHORTY_DESC">
+      <Position>4</Position>
+      <DataType>VARCHAR2(1000 byte)|0s</DataType>
+    </column>
+    <column id="56" parent="42" name="ANTHORTY_URL">
+      <Position>5</Position>
+      <DataType>VARCHAR2(1000 byte)|0s</DataType>
+    </column>
+    <index id="57" parent="42" name="SYS_C0012530">
+      <ObjectId>76756</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-11-20.03:48:06</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-20.03:48:06</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ANTHORTY_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="58" parent="42" name="SYS_C0012530">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-11-20.03:48:06</ModifiedTimestamp>
+      <ColNames>ANTHORTY_ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0012530</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="59" parent="43" name="BOOKID">
+      <Position>1</Position>
+      <DataType>NUMBER(11 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="60" parent="43" name="ISBN10">
+      <Position>2</Position>
+      <DataType>VARCHAR2(500 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="61" parent="43" name="ISBN13">
+      <Position>3</Position>
+      <DataType>VARCHAR2(500 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="62" parent="43" name="TITLE">
+      <Position>4</Position>
+      <DataType>VARCHAR2(500 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="63" parent="43" name="SUBTITLE">
+      <Position>5</Position>
+      <DataType>VARCHAR2(500 byte)|0s</DataType>
+    </column>
+    <column id="64" parent="43" name="AUTHOR">
+      <Position>6</Position>
+      <DataType>VARCHAR2(500 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="65" parent="43" name="PUDDATE">
+      <Position>7</Position>
+      <DataType>DATE|0s</DataType>
+    </column>
+    <column id="66" parent="43" name="PUBLISHER">
+      <Position>8</Position>
+      <DataType>VARCHAR2(500 byte)|0s</DataType>
+    </column>
+    <column id="67" parent="43" name="BINDING">
+      <Position>9</Position>
+      <DataType>VARCHAR2(100 byte)|0s</DataType>
+    </column>
+    <column id="68" parent="43" name="PAGES">
+      <Position>10</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="69" parent="43" name="IMAGES_MEDIUM">
+      <Position>11</Position>
+      <DataType>VARCHAR2(500 byte)|0s</DataType>
+    </column>
+    <column id="70" parent="43" name="IMAGES_LARGE">
+      <Position>12</Position>
+      <DataType>VARCHAR2(500 byte)|0s</DataType>
+    </column>
+    <column id="71" parent="43" name="BOOKTYPEID">
+      <Position>13</Position>
+      <DataType>NUMBER(11 digit)|0s</DataType>
+    </column>
+    <column id="72" parent="43" name="SUMMARY">
+      <Position>14</Position>
+      <DataType>VARCHAR2(1000 byte)|0s</DataType>
+    </column>
+    <column id="73" parent="43" name="PRICE">
+      <Position>15</Position>
+      <DataType>NUMBER(8,2 digit)|0s</DataType>
+    </column>
+    <index id="74" parent="43" name="SYS_C0012542">
+      <ObjectId>76763</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-11-20.03:48:24</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-20.03:48:24</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>BOOKID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="75" parent="43" name="SYS_C0012542">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-11-20.03:48:24</ModifiedTimestamp>
+      <ColNames>BOOKID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0012542</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="76" parent="44" name="BOOKTYPEID">
+      <Position>1</Position>
+      <DataType>NUMBER(11 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="77" parent="44" name="BOOKTYPENAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(500 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="78" parent="44" name="BOOKTYPETID">
+      <Position>3</Position>
+      <DataType>NUMBER(11 digit)|0s</DataType>
+    </column>
+    <column id="79" parent="44" name="BOOKTYPEDESC">
+      <Position>4</Position>
+      <DataType>VARCHAR2(1000 byte)|0s</DataType>
+    </column>
+    <index id="80" parent="44" name="SYS_C0012536">
+      <ObjectId>76761</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-11-20.03:48:18</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-20.03:48:18</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>BOOKTYPEID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="81" parent="44" name="SYS_C0012536">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-11-20.03:48:18</ModifiedTimestamp>
+      <ColNames>BOOKTYPEID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0012536</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="82" parent="45" name="EXPRESSID">
+      <Position>1</Position>
+      <DataType>VARCHAR2(100 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="83" parent="45" name="EXPRESSSTATE">
+      <Position>2</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+    </column>
+    <column id="84" parent="45" name="ETIME">
+      <Position>3</Position>
+      <DataType>TIMESTAMP(6)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="85" parent="45" name="EADDRESS">
+      <Position>4</Position>
+      <DataType>VARCHAR2(200 byte)|0s</DataType>
+    </column>
+    <column id="86" parent="45" name="ORDERID">
+      <Position>5</Position>
+      <DataType>VARCHAR2(100 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="87" parent="46" name="ORDERID">
+      <Position>1</Position>
+      <DataType>VARCHAR2(100 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="88" parent="46" name="USERID">
+      <Position>2</Position>
+      <DataType>NUMBER(11 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="89" parent="46" name="BOOKID">
+      <Position>3</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="90" parent="46" name="BUYNUM">
+      <Position>4</Position>
+      <DataType>NUMBER(11 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="91" parent="46" name="PAYSTATE">
+      <Position>5</Position>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
+    </column>
+    <column id="92" parent="47" name="OID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="93" parent="47" name="MONEY">
+      <Position>2</Position>
+      <DataType>NUMBER(8,2 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="94" parent="47" name="RECEIVERINFO">
+      <Position>3</Position>
+      <DataType>VARCHAR2(500 byte)|0s</DataType>
+    </column>
+    <column id="95" parent="47" name="ORDERSTATE">
+      <Position>4</Position>
+      <DataType>VARCHAR2(50 byte)|0s</DataType>
+    </column>
+    <column id="96" parent="47" name="ORDERTIME">
+      <Position>5</Position>
+      <DataType>TIMESTAMP(6)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="97" parent="47" name="USERID">
+      <Position>6</Position>
+      <DataType>NUMBER(11 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="98" parent="47" name="BOOKID">
+      <Position>7</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="99" parent="47" name="BUYNUM">
+      <Position>8</Position>
+      <DataType>NUMBER(11 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="100" parent="47" name="SYS_C0012549">
+      <ObjectId>76765</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-11-20.03:48:33</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-20.03:48:33</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>OID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="101" parent="47" name="SYS_C0012549">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-11-20.03:48:33</ModifiedTimestamp>
+      <ColNames>OID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0012549</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="102" parent="48" name="ROLE_ID">
+      <Position>1</Position>
+      <DataType>NUMBER(11 digit)|0s</DataType>
+    </column>
+    <column id="103" parent="48" name="ANTHORTY_ID">
+      <Position>2</Position>
+      <DataType>NUMBER(11 digit)|0s</DataType>
+    </column>
+    <column id="104" parent="49" name="ROLE_ID">
+      <Position>1</Position>
+      <DataType>NUMBER(11 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="105" parent="49" name="ROLE_NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(100 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="106" parent="49" name="ROLE_DESC">
+      <Position>3</Position>
+      <DataType>VARCHAR2(1000 byte)|0s</DataType>
+    </column>
+    <column id="107" parent="49" name="ROLE_STATE">
+      <Position>4</Position>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
+    </column>
+    <index id="108" parent="49" name="SYS_C0012533">
+      <ObjectId>76758</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-11-20.03:48:10</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-20.03:48:10</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ROLE_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="109" parent="49" name="SYS_C0012533">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-11-20.03:48:10</ModifiedTimestamp>
+      <ColNames>ROLE_ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0012533</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="110" parent="50" name="STOCKID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="111" parent="50" name="BOOKID">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="112" parent="50" name="BOOKNUM">
+      <Position>3</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="113" parent="50" name="STOCKTIME">
+      <Position>4</Position>
+      <DataType>DATE|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="114" parent="50" name="STOCKPRICE">
+      <Position>5</Position>
+      <DataType>NUMBER(8,2 digit)|0s</DataType>
+    </column>
+    <column id="115" parent="51" name="USERID">
+      <Position>1</Position>
+      <DataType>NUMBER(11 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="116" parent="51" name="USERNAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(500 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="117" parent="51" name="USERSPASSWORD">
+      <Position>3</Position>
+      <DataType>VARCHAR2(500 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="118" parent="51" name="USERSNICKNAME">
+      <Position>4</Position>
+      <DataType>VARCHAR2(500 byte)|0s</DataType>
+    </column>
+    <column id="119" parent="51" name="USERSBIRTHDAY">
+      <Position>5</Position>
+      <DataType>DATE|0s</DataType>
+    </column>
+    <column id="120" parent="51" name="USERSPHONE">
+      <Position>6</Position>
+      <DataType>VARCHAR2(100 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="121" parent="51" name="USERSEMAIL">
+      <Position>7</Position>
+      <DataType>VARCHAR2(100 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="122" parent="51" name="USERSHEAD">
+      <Position>8</Position>
+      <DataType>VARCHAR2(500 byte)|0s</DataType>
+    </column>
+    <column id="123" parent="51" name="USERSROLE">
+      <Position>9</Position>
+      <DataType>NUMBER(11 digit)|0s</DataType>
+    </column>
+    <column id="124" parent="51" name="USERSSTATE">
+      <Position>10</Position>
+      <DataType>NUMBER(11 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="125" parent="51" name="USERSACTIVECODE">
+      <Position>11</Position>
+      <DataType>VARCHAR2(100 byte)|0s</DataType>
+    </column>
+    <column id="126" parent="51" name="USERSREGISTTIME">
+      <Position>12</Position>
+      <DataType>DATE|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="127" parent="51" name="SYS_C0012526">
+      <ObjectId>76753</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-11-20.03:48:00</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-20.03:48:00</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>USERID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="128" parent="51" name="SYS_C0012527">
+      <ObjectId>76754</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-11-20.03:48:00</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-20.03:48:00</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>USERNAME</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="129" parent="51" name="SYS_C0012526">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-11-20.03:48:00</ModifiedTimestamp>
+      <ColNames>USERID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0012526</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="130" parent="51" name="SYS_C0012527">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-11-20.03:48:00</ModifiedTimestamp>
+      <ColNames>USERNAME</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0012527</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>
