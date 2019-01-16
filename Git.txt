@@ -1,0 +1,73 @@
+git@gitee.com:heconly/Git1.git
+git@github.com:Hconly/Git2.git
+
+
+
+复制远程库
+git clone git@github.com:Hconly/learngit.git
+在GitHub上，可以任意Fork开源仓库；
+自己拥有Fork后的仓库的读写权限；
+可以推送pull request给官方仓库来贡献代码。
+
+
+Git基本常用命令如下：
+   mkdir：         XX (创建一个空目录 XX指目录名)
+   pwd：          显示当前目录的路径。
+   git init ：         把当前的目录变成可以管理的git仓库，生成隐藏.git文件。
+   git add XX ：      把xx文件添加到暂存区去。
+   git commit -m “XX” ： 提交文件 –m 后面的是注释。
+   git status：        查看仓库状态
+   git diff  XX ：     查看XX文件修改了那些内容
+   git log ：         查看历史记录
+   git reset  --hard HEAD^ ：或者 git reset  --hard HEAD~ 回退到上一个版本
+                        (如果想回退到100个版本，使用git reset --hard HEAD~100 )
+   cat XX   ：      查看XX文件内容
+   git reflog  ：     查看历史记录的版本号id
+   git checkout -- XX ： 把XX文件在工作区的修改全部撤销。
+   git rm XX  ：        删除XX文件
+   git remote add origin https://github.com/RTplay/testgit.git： 关联一个远程库
+   git push -u(第一次要用-u 以后不需要) origin master ：把当前master分支推送到远程库
+   git clone (git url) 从远程库中克隆
+   git checkout -b dev ： 创建dev分支 并切换到dev分支上
+   git branch  ：查看当前所有的分支
+   git checkout master ：切换回master分支
+   git merge dev    ：在当前的分支上合并dev分支
+   git branch -d dev ：删除dev分支
+   git branch name  ：创建分支
+   git stash ：把当前的工作隐藏起来 等以后恢复现场后继续工作
+   git stash list ：查看所有被隐藏的文件列表
+   git stash apply ：恢复被隐藏的文件，但是内容不删除
+   git stash drop： 删除文件
+   git stash pop： 恢复文件的同时 也删除文件
+   git remote： 查看远程库的信息
+   git remote -v ：查看远程库的详细信息
+   git push origin master  ：Git会把master分支推送到远程库对应的远程分支上
+
+
+在Server服务器上加载私钥文件
+
+仍然在.ssh目录下，执行命令：
+
+ssh-add id_rsa
+
+系统如果提示：Identity added: id_rsa (id_rsa) 就表明加载成功了
+
+下面有几个异常情况处理：
+
+–如果系统提示：could not open a connection to your authentication agent
+
+则需要执行一下命令：
+
+ssh-agent bash
+
+然后再执行上述的ssh-add id_rsa命令
+
+–如果系统提示id_rsa: No such file or directory
+
+这是系统无法找到私钥文件id_rsa，需要看看当前路径是不是不在.ssh目录，或者私钥文件改了名字，例如如果建立的时候改成 aa_rsa，则这边命令中也需要相应改一下
+
+-如果系统提示 command not found，那肯定是你命令敲错字符了J
+
+-提示Agent admitted failure to sign using the key，私钥没有加载成功，重试ssh-add
+
+-注意id_rsa/id_rsa.pub文件不要删除，存放在.ssh目录下
