@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/aop
+    http://www.springframework.org/schema/aop/spring-aop.xsd
+     http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+">
+
+    <!--导入hibernate相关配置-->
+    <import resource="hibernate.cfg.xml"/>
+
+    <!--
+    spring整合所有框架
+    用户发出请求，action拦截 分发调用service service调用dao dao调用hibernate  hibernate将数据交给sessionFactory
+
+    Struts拦截用户请求分发请求
+    hibernate数据持久保存
+    service进行业务处理
+    -->
+
+    <!--用户action-->
+    <bean id="saveAction" class="com.beichende.web.SaveAction" scope="prototype">
+        <property name="accountService" ref="accountService"/>
+    </bean>
+    <!--用户service-->
+    <bean id="accountService" class="com.beichende.service.AccountServiceImpl">
+        <property name="accountDao" ref="accountDao"/>
+    </bean>
+    <!--用户dao-->
+    <bean id="accountDao" class="com.beichende.dao.AccountDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+</beans>

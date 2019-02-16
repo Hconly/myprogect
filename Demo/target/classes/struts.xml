@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<!-- strutsRMI apache struts基于安全性考虑，RMI默认是关闭的 -->
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+
+    <package name="save" extends="struts-default">
+        <!--spring 当中的id-->
+        <action name="save" class="saveAction" method="save"></action>
+    </package>
+    
+    <package name="find" extends="struts-default">
+        <action name="find" class="findAction" method="service"></action>
+    </package>
+    
+    <package name="del" extends="struts-default">
+        <action name="del" class="delAction" method="delBatch"></action>
+    </package>
+    
+    <package name="upd" extends="struts-default">
+        <action name="upd" class="updAction" method="updateAcco"></action>
+    </package>
+</struts>
