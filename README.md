@@ -1,2 +1,2 @@
-# Git2
-this is a code test repository
+# myproject
+some code test repository
