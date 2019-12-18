@@ -1,1 +1,0 @@
-http://download.jboss.org/jbosstools/updates/stable/kepler/
