@@ -1,3 +1,0 @@
-自动注入autoWired
-byname  根据id注入
-bytype  根据类型注入
